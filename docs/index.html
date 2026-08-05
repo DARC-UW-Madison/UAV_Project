@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Understanding and mitigating drone-induced distraction for construction safety through behavioral experiments and distraction-aware drone path planning.">
+    <title>Drone-Induced Distraction for Construction Safety</title>
+    <link rel="icon" href="assets/logos/darc-logo-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="header-identity">
+        <a class="lab-link" href="https://darc.cee.wisc.edu/index.html" target="_blank" rel="noopener" aria-label="Digital and Robotic Construction Lab website">
+          <img src="assets/logos/darc-logo-icon.png" alt="DARC Lab logo">
+        </a>
+      </div>
+      <button class="menu-button" type="button" data-menu-button aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#overview">Overview</a>
+        <a href="#study-1">Study 1</a>
+        <a href="#study-2">Study 2</a>
+        <a href="#study-3">Study 3</a>
+        <a href="#team">Research team</a>
+        <a href="#acknowledgements">Acknowledgements</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-copy">
+          <p class="eyebrow">Construction safety + human-drone interaction</p>
+          <h1>Understanding and Mitigating Drone-Induced Distraction for Construction Safety</h1>
+          <p class="lead">A research project quantifying how UAV flight behavior changes construction workers' visual attention and task performance, then translating the evidence into distraction-aware drone path planning.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#overview">Research Overview</a>
+            <a class="button" href="#study-1">View Studies</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-label="Distraction-aware path planning preview">
+          <video autoplay muted loop playsinline poster="assets/video-posters/path-planning-demo.jpg">
+            <source src="assets/videos/media8.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research overview</p>
+          <h2>Reducing cognitive distraction from drones in safety-critical construction work</h2>
+          <p>Drones are increasingly used for construction inspection, monitoring, mapping, and progress documentation. Their safety risk is usually framed as a direct physical hazard, such as collision or falling components. This project focuses on a less visible risk: drones can become visual, auditory, and cognitive distractors while workers perform tasks where attention to hazards is essential.</p>
+        </div>
+        <div class="two-column question-grid">
+          <div>
+            <h3>Human factors studied</h3>
+            <ul class="check-list">
+              <li>Visual attention on hazards, sky, drone, and payload</li>
+              <li>Task performance, including collisions and completion time</li>
+              <li>Worker response under high-risk construction tasks</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Flight parameters</h3>
+            <ul class="check-list">
+              <li>Vertical height and relative position</li>
+              <li>Front/behind and above/below flight directions</li>
+              <li>Path choices around workers, tower cranes, and obstacles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="framework-grid">
+          <article>
+            <p class="tag">Research gaps</p>
+            <h3>What was missing</h3>
+            <ul class="check-list">
+              <li>Prior construction studies focused mainly on close drone distances and psychological response.</li>
+              <li>Task-performance effects at normal UAV working heights were not well quantified.</li>
+              <li>Drone-induced distraction had not been represented as a factor in construction UAV path planning.</li>
+            </ul>
+          </article>
+          <article>
+            <p class="tag">Objectives</p>
+            <h3>What this project contributes</h3>
+            <ol class="number-list">
+              <li>Measure how drone flight height and direction affect worker hazard awareness.</li>
+              <li>Quantify how drone position affects tower crane operator attention and collisions.</li>
+              <li>Convert distraction evidence into soft costs for UAV path planning.</li>
+            </ol>
+          </article>
+          <article>
+            <p class="tag">Research workflow</p>
+            <h3>From behavioral evidence to planning</h3>
+            <div class="workflow">
+              <span>Controlled VR studies</span>
+              <span>Distraction parameters</span>
+              <span>Cost-aware UAV paths</span>
+            </div>
+            <p>The project connects human-subject experiments with computational planning so that drone operation can be evaluated not only by physical feasibility, but also by its likelihood of distracting nearby workers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Research motivation</p>
+          <h2>Construction UAVs create a human-factors problem that is not captured by physical collision risk alone.</h2>
+          <p>Distraction is closely tied to construction safety outcomes, especially falls, slips, trips, and crane-operation incidents. The project asks whether UAV flight choices can be designed so that drones still support inspection and monitoring tasks while reducing their interference with worker attention.</p>
+        </div>
+        <div class="metric-grid">
+          <article class="metric">
+            <strong>60%</strong>
+            <span>Maximum reduction in hazard-area fixation time observed when a drone flew from the front at 16 ft.</span>
+          </article>
+          <article class="metric">
+            <strong>56%</strong>
+            <span>Increase in tower-crane boundary collisions when the drone flew below the operator compared with no-drone.</span>
+          </article>
+          <article class="metric">
+            <strong>30%</strong>
+            <span>Longer path completion time can trade for substantially lower drone dwell time in distraction zones.</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="studies" class="section section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Empirical studies</p>
+          <h2>Controlled experiments on drone-induced distraction in high-risk construction tasks</h2>
+          <p>Two within-subject VR experiments were designed to isolate drone flight effects while controlling individual differences. Eye-tracking, task completion, collisions, and simulator performance metrics were used to connect visual attention with safety-relevant behavior.</p>
+        </div>
+
+        <div id="study-1" class="study-section study-one">
+          <div class="research-block">
+            <div class="research-copy">
+              <p class="tag">Study 1</p>
+              <h3>Workers at height</h3>
+              <p>Participants performed a material-handling task in a virtual elevated construction environment containing openings and edges. The drone appeared at multiple working heights and from different directions, creating a controlled setting for testing whether UAV presence redirects attention away from hazard areas.</p>
+              <ul class="check-list">
+                <li>Within-subject design with Latin square ordering</li>
+                <li>24 participants in a virtual construction site</li>
+                <li>Meta Quest Pro eye tracking and KAT Walk C2+ treadmill</li>
+              </ul>
+              <div class="study-meta">
+                <article>
+                  <strong>Task</strong>
+                  <span>Material handling near openings and edges</span>
+                </article>
+                <article>
+                  <strong>Conditions</strong>
+                  <span>No drone, front/behind drone, 16/48/82 ft heights</span>
+                </article>
+                <article>
+                  <strong>Measures</strong>
+                  <span>Fixation time/count on danger areas and sky</span>
+                </article>
+              </div>
+            </div>
+            <figure class="figure-frame">
+              <img src="assets/figures/workers-route.png" alt="Virtual construction site route for workers at height with front and back drone directions.">
+              <figcaption>Virtual construction task with hazardous openings, edges, route, and drone directions.</figcaption>
+            </figure>
+          </div>
+
+          <div class="study-demo">
+            <article class="media-card demo-card">
+              <video controls preload="metadata" poster="assets/video-posters/workers-demo.jpg">
+                <source src="assets/videos/media5.mp4" type="video/mp4">
+              </video>
+              <div class="demo-copy">
+                <h3>Study 1 video: Work-at-height experiment</h3>
+                <p>Video documentation of the virtual elevated task environment and participant movement setup used to study hazard-area attention under drone flight conditions.</p>
+                <p class="demo-note"><strong>Demo focus:</strong> Participants move through a work-at-height environment where openings, edges, sky regions, and drone flight paths define areas of interest for eye-tracking analysis.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="figure-grid three">
+            <figure class="figure-card">
+              <img src="assets/figures/meta-quest-pro.png" alt="Participant wearing Meta Quest Pro while standing on KAT Walk C2+ treadmill.">
+              <figcaption>VR and eye-tracking setup for capturing attention during worker movement.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/figures/kat-walk.png" alt="Work-at-height virtual environment and treadmill setup.">
+              <figcaption>Participant navigates the elevated task environment through an omnidirectional treadmill.</figcaption>
+            </figure>
+            <div class="finding-panel">
+              <h3>Why this setup matters</h3>
+              <p>The VR environment makes it possible to expose every participant to the same hazardous task, drone height, and drone direction conditions without creating field risk. The within-subject design improves statistical power by comparing each participant against their own no-drone baseline.</p>
+            </div>
+          </div>
+
+          <div class="result-row three">
+            <figure class="figure-card data-viz result-figure">
+              <img src="assets/figures/fixation-danger-no-drone.png" alt="Fixation time on danger areas by drone condition.">
+              <figcaption><strong>No-drone baseline versus drone conditions.</strong><span>Fixation time on danger areas was highest without a drone and dropped under drone-present conditions, showing that UAV presence can draw attention away from openings and edges.</span></figcaption>
+            </figure>
+            <figure class="figure-card data-viz result-figure">
+              <img src="assets/figures/fixation-danger-front.png" alt="Fixation time on danger areas for front drone conditions at different heights.">
+              <figcaption><strong>Front-approaching drone effect.</strong><span>The reduction in hazard-area fixation was strongest when the drone approached from the front at the lowest tested height, identifying a high-risk flight configuration for work-at-height tasks.</span></figcaption>
+            </figure>
+            <figure class="figure-card data-viz result-figure">
+              <img src="assets/figures/fixation-sky.png" alt="Fixation time on sky by drone condition.">
+              <figcaption><strong>Attention shifts toward the sky.</strong><span>Front-direction drone flights increased sky-region fixation, supporting the interpretation that the drone becomes a competing visual target during hazard-sensitive movement.</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="study-conclusion">
+            <p class="tag">Study 1 conclusion</p>
+            <h3>Low, front-facing drone flights create the clearest distraction signal for workers at height.</h3>
+            <p>The results indicate that drone presence changes where workers look while navigating an elevated environment. The key safety implication is not only that workers notice drones, but that attention is redistributed away from danger areas that normally require continuous monitoring.</p>
+            <ul class="check-list">
+              <li>Use greater vertical clearance when flying near elevated work areas.</li>
+              <li>Avoid front-approach paths when workers are moving near openings or edges.</li>
+              <li>Represent worker distraction zones as spatial planning parameters rather than treating distraction as a purely subjective response.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="study-2" class="study-section study-two">
+          <div class="research-block alternate">
+            <div class="research-copy">
+              <p class="tag">Study 2</p>
+              <h3>Tower crane operators</h3>
+              <p>Participants performed an official certification-style zigzag crane task while drones flew inward and outward from above or below the control cabin. This study tested whether drone position affects operator visual attention and task performance in a precision-control activity.</p>
+              <ul class="check-list">
+                <li>Within-subject design with five flight conditions</li>
+                <li>20 participants in a tower crane simulator</li>
+                <li>Performance measured by task time, collisions, and payload deviation</li>
+              </ul>
+              <div class="study-meta">
+                <article>
+                  <strong>Task</strong>
+                  <span>Certification-style zigzag crane operation</span>
+                </article>
+                <article>
+                  <strong>Conditions</strong>
+                  <span>No drone, above/below cabin, close/far horizontal distance</span>
+                </article>
+                <article>
+                  <strong>Measures</strong>
+                  <span>Drone/payload fixation, collisions, completion time, payload deviation</span>
+                </article>
+              </div>
+            </div>
+            <figure class="figure-frame">
+              <img src="assets/figures/tower-crane-sim.png" alt="Tower crane simulation scene with crane and payload.">
+              <figcaption>Tower crane simulation used to test drone flight effects on operator performance.</figcaption>
+            </figure>
+          </div>
+
+          <div class="study-demo">
+            <article class="media-card demo-card">
+              <video controls preload="metadata" poster="assets/video-posters/crane-demo.jpg">
+                <source src="assets/videos/media7.mp4" type="video/mp4">
+              </video>
+              <div class="demo-copy">
+                <h3>Study 2 video: Tower crane operator experiment</h3>
+                <p>Video documentation of the crane simulator task used to evaluate drone effects on operator visual attention, payload control, and boundary collisions.</p>
+                <p class="demo-note"><strong>Demo focus:</strong> The simulation recreates a precision-control crane task while drones approach from above or below the operator cabin, linking flight condition with operator attention and task performance.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="figure-grid three">
+            <figure class="figure-card">
+              <img src="assets/figures/joystick.png" alt="Meta Quest headset used in the tower crane simulator.">
+              <figcaption>VR headset used to capture the crane simulation environment and visual attention.</figcaption>
+            </figure>
+            <figure class="figure-card">
+              <img src="assets/figures/meta-quest-crane.png" alt="Dual joystick controller used for the tower crane task.">
+              <figcaption>Dual-stick controller used to operate the simulated tower crane payload.</figcaption>
+            </figure>
+            <div class="finding-panel">
+              <h3>Operational interpretation</h3>
+              <p>For tower crane operation, drone height relative to the cabin becomes an operational design variable. Flights below the operator can interfere with payload-control performance even when the drone does not physically contact the crane.</p>
+            </div>
+          </div>
+
+          <div class="result-row result-with-analysis">
+            <figure class="figure-card wide data-viz result-figure">
+              <img src="assets/figures/tower-collision-result.svg" alt="Relative boundary collision result showing a 56 percent increase for below-operator drone flight.">
+              <figcaption><strong>Below-cabin flights increase boundary collisions.</strong><span>The collision result shows a performance penalty when the drone operates below the tower-crane operator, suggesting that vertical position relative to the cabin is a safety-relevant flight parameter.</span></figcaption>
+            </figure>
+            <div class="finding-panel">
+              <h3>Design implication</h3>
+              <p>Drone flight height is a critical distraction parameter for crane tasks. Keeping drones vertically clear from active operator viewpoints and avoiding below-cabin paths can reduce distraction-related risk while still allowing site monitoring and inspection.</p>
+            </div>
+          </div>
+
+          <div class="study-conclusion">
+            <p class="tag">Study 2 conclusion</p>
+            <h3>Tower crane operation is sensitive to cabin-relative drone height.</h3>
+            <p>The crane task results connect drone position to both visual attention and operational performance. Below-operator flights are especially important because they can interfere with payload-control behavior without requiring any physical collision between drone and crane.</p>
+            <ul class="check-list">
+              <li>Avoid below-cabin drone paths when tower cranes are actively operated.</li>
+              <li>Separate UAV routing rules for crane work from generic site-level obstacle avoidance.</li>
+              <li>Use operator-relative flight zones when translating behavioral results into planning constraints.</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="study-3" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Study 3 / Computational method</p>
+          <h2>Distraction-aware drone path planning</h2>
+          <p>The planning method converts empirical distraction parameters into soft costs in a 3D grid. The drone can still reach inspection or monitoring viewpoints, but routes that dwell in distraction areas become more expensive, allowing the planner to trade small efficiency losses for meaningful reduction in distraction exposure.</p>
+        </div>
+        <div class="study-section study-three">
+          <div class="study-demo method-demo">
+            <article class="media-card demo-card">
+              <video controls preload="metadata" poster="assets/video-posters/path-planning-demo.jpg">
+                <source src="assets/videos/media8.mp4" type="video/mp4">
+              </video>
+              <div class="demo-copy">
+                <h3>Study 3 video: Distraction-aware path planning</h3>
+                <p>Video documentation of cost-aware UAV routing around workers, tower cranes, obstacles, travel points, and empirically derived distraction boundaries.</p>
+                <p class="demo-note"><strong>Demo focus:</strong> Behavioral findings from Study 1 and Study 2 become route costs, reducing drone dwell time near safety-critical work while preserving feasible inspection paths.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="parameter-bridge">
+            <div>
+              <p class="tag">Cross-study synthesis</p>
+              <h3>Empirical findings become planning parameters</h3>
+              <p>The worker-at-height study and tower-crane study identify vertical clearance thresholds that can be represented spatially. These parameters define worker and crane distraction areas used by the path planner.</p>
+              <ul class="check-list">
+                <li>Worker distraction area: maintain substantial vertical clearance over workers performing high-risk tasks.</li>
+                <li>Tower crane distraction area: avoid below-operator flight paths near active crane operation.</li>
+                <li>Planning use: penalize routes that dwell inside distraction areas instead of treating them as rigid no-fly zones.</li>
+              </ul>
+            </div>
+            <figure class="figure-frame data-viz">
+              <img src="assets/figures/distraction-parameters.png" alt="Worker and tower crane distraction parameter boundaries.">
+              <figcaption><strong>Behavioral findings converted to planning inputs.</strong><span>The empirical worker and crane results define spatial distraction areas that can be used by the path planner to penalize risky drone dwell time.</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="pipeline">
+            <article>
+              <span>1</span>
+              <h3>Scene inputs</h3>
+              <p>Workers, tower cranes, obstacles, site geometry, start location, and target travel points.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3>Soft cost grid</h3>
+              <p>Cells near empirically defined distraction areas receive additional cost instead of becoming hard no-fly zones.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3>Local planning</h3>
+              <p>Cost-aware paths are estimated between candidate points while respecting physical obstacles and travel feasibility.</p>
+            </article>
+            <article>
+              <span>4</span>
+              <h3>Ordering</h3>
+              <p>Travel points are sequenced to balance route length, completion time, and time spent in distraction areas.</p>
+            </article>
+          </div>
+
+          <div class="method-detail">
+            <div>
+              <p class="tag">Method logic</p>
+              <h3>Why use soft costs?</h3>
+              <p>Construction sites often require drones to reach specific viewpoints for monitoring or inspection. A strict no-fly boundary may make a task infeasible or overly conservative. Soft costs preserve route feasibility while making distraction-heavy routes less attractive to the planner.</p>
+              <ul class="check-list">
+                <li>Hard constraints still represent obstacles and physical infeasibility.</li>
+                <li>Soft costs represent human-factors risk from drone-induced distraction.</li>
+                <li>The soft-cost weight controls the safety-efficiency tradeoff.</li>
+              </ul>
+            </div>
+            <figure class="figure-frame data-viz">
+              <img src="assets/figures/path-planning-side.png" alt="Side view of drone path planning around tower crane and workers.">
+              <figcaption><strong>Side-view planning geometry.</strong><span>The planner evaluates vertical clearance around workers and crane operation while preserving required travel points for monitoring or inspection.</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="planning-visuals method-results">
+            <figure class="figure-frame data-viz">
+              <img src="assets/figures/soft-cost-boundary.png" alt="Soft cost boundary conditions for drone path planning.">
+              <figcaption><strong>Soft-cost boundary logic.</strong><span>Cells near distraction boundaries receive additional cost, allowing the planner to discourage distracting routes without making the mission infeasible.</span></figcaption>
+            </figure>
+            <figure class="figure-frame data-viz">
+              <img src="assets/figures/path-planning-top.png" alt="Top view of drone path planning around workers and tower crane.">
+              <figcaption><strong>Top-view routing around active work.</strong><span>The route is evaluated relative to workers, tower cranes, obstacles, and travel points so that human-distraction exposure becomes part of path selection.</span></figcaption>
+            </figure>
+            <figure class="figure-frame data-viz result-wide">
+              <img src="assets/figures/path-planning-findings.png" alt="Summary of path-planning findings showing efficiency and distraction-time tradeoffs.">
+              <figcaption><strong>Safety-efficiency tradeoff.</strong><span>Higher soft-cost weights reduce time in distraction areas while increasing path length and completion time, making the tradeoff explicit for construction UAV planning.</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="tradeoff">
+            <div>
+              <p class="tag">Interactive tradeoff</p>
+              <h3>Adjust soft cost weight</h3>
+              <p>Higher &lambda; means the route spends less time in distraction areas, with additional path length and completion time. The values shown here represent the multi-worker, multi-crane case used in the planning sensitivity analysis.</p>
+              <label for="lambdaRange">Soft cost weight &lambda;</label>
+              <input id="lambdaRange" type="range" min="0" max="5" value="3" step="1">
+            </div>
+            <div class="tradeoff-values" aria-live="polite">
+              <article>
+                <span id="lambdaValue">3</span>
+                <p>&lambda;</p>
+              </article>
+              <article>
+                <span id="pathValue">+15%</span>
+                <p>Path length</p>
+              </article>
+              <article>
+                <span id="timeValue">+24%</span>
+                <p>Completion time</p>
+              </article>
+              <article>
+                <span id="distractionValue">-46%</span>
+                <p>Distraction time</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="sensitivity-panel">
+            <div>
+              <p class="tag">Sensitivity analysis</p>
+              <h3>Planning tradeoff across site complexity</h3>
+              <p>When the site includes more workers and tower cranes, the planner has more opportunities to reroute around distraction areas. In the multi-worker, multi-crane scenario, a moderate soft-cost setting produces a 46% reduction in drone dwell time inside distraction areas with a 15% increase in path length and a 24% increase in completion time.</p>
+            </div>
+            <table class="sensitivity-table">
+              <thead>
+                <tr>
+                  <th>Scenario</th>
+                  <th>Soft-cost setting</th>
+                  <th>Path length</th>
+                  <th>Completion time</th>
+                  <th>Distraction time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 worker + 1 tower crane</td>
+                  <td>&lambda; = 10</td>
+                  <td>+13%</td>
+                  <td>+18%</td>
+                  <td>-18%</td>
+                </tr>
+                <tr>
+                  <td>3 workers + 2 tower cranes</td>
+                  <td>&lambda; = 3</td>
+                  <td>+15%</td>
+                  <td>+24%</td>
+                  <td>-46%</td>
+                </tr>
+                <tr>
+                  <td>3 workers + 2 tower cranes</td>
+                  <td>&lambda; = 90</td>
+                  <td>+19%</td>
+                  <td>+30%</td>
+                  <td>-54%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="study-conclusion">
+            <p class="tag">Study 3 conclusion</p>
+            <h3>Distraction-aware planning turns behavioral evidence into operational UAV guidance.</h3>
+            <p>The computational study shows that drone paths can be optimized beyond physical feasibility. By adding empirically derived soft costs, the planner can reduce exposure near distraction-sensitive work zones while preserving route feasibility for construction monitoring tasks.</p>
+            <ul class="check-list">
+              <li>Soft costs provide a practical alternative to overly rigid no-fly boundaries.</li>
+              <li>Moderate detours can substantially reduce drone dwell time in distraction areas.</li>
+              <li>The method creates a direct bridge from human-subject evidence to UAV route planning.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contributions">
+        <div class="section-heading">
+          <p class="eyebrow">Research contributions</p>
+          <h2>Connecting behavioral evidence with safer UAV operation</h2>
+          <p>The project contributes at three levels: understanding how drone presence affects worker attention, parameterizing distraction risk in spatial terms, and demonstrating how those parameters can change UAV route choices.</p>
+        </div>
+        <div class="contribution-grid">
+          <article>
+            <img src="assets/figures/fixation-danger-front.png" alt="Fixation time on danger areas for front drone conditions.">
+            <h3>Understanding impacts</h3>
+            <p>Shows how drone presence can shift visual attention away from hazards and alter task performance in high-risk construction settings, including work-at-height tasks and tower crane operation.</p>
+          </article>
+          <article>
+            <img src="assets/figures/distraction-parameters.png" alt="Drone distraction parameters around workers and tower cranes.">
+            <h3>Quantitative parameters</h3>
+            <p>Extracts spatial distraction parameters from controlled behavioral experiments, including worker vertical clearance and tower crane cabin-relative flight conditions.</p>
+          </article>
+          <article>
+            <img src="assets/figures/path-planning-findings.png" alt="Path planning finding summary for distraction-aware drone routing.">
+            <h3>Mitigation by planning</h3>
+            <p>Integrates distraction costs into path planning to reduce drone dwell time in risky distraction areas while preserving route feasibility for inspection and monitoring tasks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="team" class="section section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Research team</p>
+          <h2>Project investigators and researchers</h2>
+        </div>
+        <div class="people-grid">
+          <article class="person-card">
+            <img src="assets/people/wei-han.jpg" alt="Wei Han portrait">
+            <h3>Wei Han</h3>
+            <p>Ph.D. alumnus, University of Wisconsin-Madison</p>
+            <span>Graduate researcher</span>
+          </article>
+          <article class="person-card">
+            <img src="assets/people/mahfuza-maisha-mouri.jpg" alt="Mahfuza Maisha Mouri portrait">
+            <h3>Mahfuza (Masha) Mouri</h3>
+            <p>Graduate Research Assistant, West Virginia University</p>
+            <span>Graduate researcher</span>
+          </article>
+          <article class="person-card">
+            <img src="assets/people/liqun-xu.jpg" alt="Liqun Xu portrait">
+            <h3>Liqun Xu</h3>
+            <p>Ph.D. Student, University of Wisconsin-Madison</p>
+            <span>Graduate researcher</span>
+          </article>
+          <article class="person-card">
+            <img src="assets/people/alireza-ghasemi.jpg" alt="Alireza Ghasemi portrait">
+            <h3>Alireza Ghasemi</h3>
+            <p>Graduate Research Assistant, West Virginia University</p>
+            <span>Graduate researcher</span>
+          </article>
+          <article class="person-card">
+            <img src="assets/people/wei-yin-loh.jpg" alt="Wei-Yin Loh portrait">
+            <h3>Wei-Yin Loh</h3>
+            <p>Professor, Department of Statistics, University of Wisconsin-Madison</p>
+            <span>Co-PI</span>
+          </article>
+          <article class="person-card">
+            <img src="assets/people/fei-dai.jpg" alt="Fei Dai portrait">
+            <h3>Fei Dai</h3>
+            <p>Professor, West Virginia University</p>
+            <span>Co-PI</span>
+          </article>
+          <article class="person-card">
+            <img src="assets/people/zhenhua-zhu.png" alt="Zhenhua Zhu portrait">
+            <h3>Zhenhua Zhu</h3>
+            <p>Associate Professor, University of Wisconsin-Madison</p>
+            <span>PI</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section limitations">
+        <div class="section-heading">
+          <p class="eyebrow">Future directions</p>
+          <h2>Extending distraction-aware UAV safety research</h2>
+        </div>
+        <div class="limitation-list">
+          <article>
+            <h3>Task diversity</h3>
+            <p>Extend beyond work-at-height, roofing, and tower crane operation to tasks such as ladder work, scaffold inspection, equipment spotting, and collaborative lifting.</p>
+          </article>
+          <article>
+            <h3>Drone behavior space</h3>
+            <p>Study flight speed, lateral offset, trajectory shape, hovering duration, acoustic profile, lighting, and drone size as additional distraction factors.</p>
+          </article>
+          <article>
+            <h3>Field validation</h3>
+            <p>Test whether VR-derived distraction parameters transfer to live construction jobsites and can be integrated with real site sensing, inspection routes, and UAV operation policies.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="acknowledgements" class="section acknowledgements">
+        <div class="section-heading compact">
+          <p class="eyebrow">Acknowledgements</p>
+          <h2>Project support and collaboration</h2>
+          <p>This work acknowledges support, collaboration, and institutional resources from NIOSH, Mortenson, and the Wisconsin Alumni Research Foundation.</p>
+        </div>
+        <div class="logo-grid" aria-label="Acknowledged organizations">
+          <a class="logo-card niosh-logo" href="https://www.cdc.gov/niosh/" aria-label="National Institute for Occupational Safety and Health">
+            <img src="assets/logos/niosh-logo.svg" alt="NIOSH logo">
+          </a>
+          <a class="logo-card mortenson-logo" href="https://www.mortenson.com/" aria-label="Mortenson">
+            <img src="assets/logos/mortenson-logo.svg" alt="Mortenson logo">
+          </a>
+          <a class="logo-card warf-logo" href="https://www.warf.org/" aria-label="Wisconsin Alumni Research Foundation">
+            <img src="assets/logos/warf-logo.png" alt="WARF logo">
+          </a>
+        </div>
+      </section>
+
+      <section id="publications" class="section section-band publications-section">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2>Published papers and related project outputs</h2>
+        </div>
+
+        <div class="publication-group">
+          <h3>Drone distraction and path planning</h3>
+          <ol class="publication-list">
+            <li><a href="https://doi.org/10.1061/JCEMD4.COENG-16567">Drone Flights and Worker Visual Attention: A Quantitative Study of Distraction and Hazard Awareness</a><span>Journal of Construction Engineering and Management, 2025</span></li>
+            <li><a href="https://doi.org/10.22260/ISARC2025/0110">Drone-Induced Distraction on Construction Sites: A Quantitative Analysis of Flight Configurations</a><span>ISARC 2025</span></li>
+            <li><a href="https://ascelibrary.org/doi/10.1061/9780784486115.062">Quantitative Assessment of Drone Presence on Worker Safety in Construction Environments</a><span>ASCE, 2025</span></li>
+            <li><a href="https://doi.org/10.22260/ISARC2026/0069">Distraction-Aware Drone Path Planning for Construction Safety</a><span>ISARC 2026</span></li>
+            <li><a href="https://doi.org/10.1061/JCEMD4.COENG-17685">Assessing Impacts of Drone-Induced Distraction on Postural Stability of Roofers during Shingle Installation on Inclined Surfaces</a><span>Journal of Construction Engineering and Management, 2026</span></li>
+            <li><a href="https://ascelibrary.org/doi/10.1061/9780784486436.101">Evaluation of Drone-Induced Balance Loss of Roofers on Sloped Surfaces</a><span>ASCE, 2026</span></li>
+            <li><a href="https://www.iaarc.org/publications/2026_proceedings_of_the_43rd_isarc_singapore/effects_of_drone_distraction_on_roofing_sites-a_quantitative_assessment_of_roofers_balance_during_critical_stooping_task.html">Effects of Drone Distraction on Roofing Sites: A Quantitative Assessment of Roofers' Balance During Critical Stooping Task</a><span>ISARC 2026</span></li>
+            <li><a href="https://search.library.wisc.edu/digital/A5JSHN52AUEYKT9A">Understanding and Mitigating Drone-Induced Distraction: Behavioral Experiments and Distraction-Aware Path Planning for Construction Safety</a><span>Doctoral dissertation, UW-Madison, 2025</span></li>
+          </ol>
+        </div>
+
+        <div class="publication-group muted-group">
+          <h3>Preprint / manuscript</h3>
+          <ol class="publication-list">
+            <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5988642">Drone-Induced Distraction: Effects of Human-Drone Interaction on Tower Crane Operator Visual Attention and Task Performance</a><span>SSRN preprint</span></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><a href="https://darc.cee.wisc.edu/index.html" target="_blank" rel="noopener">Digital and Robotic Construction (DARC) Lab</a>, Department of Civil and Environmental Engineering, University of Wisconsin-Madison</p>
+      <p>Built for GitHub Pages as an academic project website.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
