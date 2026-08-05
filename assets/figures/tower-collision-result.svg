@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img" aria-labelledby="title desc">
+  <title id="title">Relative boundary collision result for tower crane operation</title>
+  <desc id="desc">Bar chart showing no-drone boundary collisions indexed to 100 and below-operator drone flight indexed to 156.</desc>
+  <rect width="900" height="460" fill="#ffffff"/>
+  <text x="70" y="56" fill="#232323" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Boundary Collision Result</text>
+  <text x="70" y="88" fill="#565656" font-family="Arial, Helvetica, sans-serif" font-size="18">Relative collision index, no-drone condition = 100</text>
+  <line x1="120" y1="360" x2="780" y2="360" stroke="#333333" stroke-width="2"/>
+  <line x1="120" y1="120" x2="120" y2="360" stroke="#333333" stroke-width="2"/>
+  <g fill="#565656" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <text x="84" y="365">0</text>
+    <text x="76" y="305">50</text>
+    <text x="66" y="245">100</text>
+    <text x="66" y="185">150</text>
+  </g>
+  <g stroke="#e8e8e8" stroke-width="1">
+    <line x1="120" y1="300" x2="780" y2="300"/>
+    <line x1="120" y1="240" x2="780" y2="240"/>
+    <line x1="120" y1="180" x2="780" y2="180"/>
+  </g>
+  <rect x="240" y="240" width="150" height="120" rx="6" fill="#149dcc"/>
+  <rect x="510" y="173" width="150" height="187" rx="6" fill="#ff3366"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="315" y="226" fill="#232323" font-size="24" font-weight="700">100</text>
+    <text x="585" y="159" fill="#232323" font-size="24" font-weight="700">156</text>
+    <text x="315" y="397" fill="#232323" font-size="18" font-weight="700">No drone</text>
+    <text x="585" y="397" fill="#232323" font-size="18" font-weight="700">Drone below operator</text>
+  </g>
+  <path d="M410 205 C445 168 477 150 504 147" fill="none" stroke="#ff3366" stroke-width="3"/>
+  <path d="M500 136 L523 145 L503 159" fill="none" stroke="#ff3366" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="455" y="128" fill="#e50039" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">+56%</text>
+  <text x="70" y="430" fill="#565656" font-family="Arial, Helvetica, sans-serif" font-size="16">Interpretation: below-operator drone flights produced more boundary collisions than the no-drone baseline.</text>
+</svg>
