@@ -34,20 +34,30 @@
 
     <main id="top">
       <section class="hero section-band">
-        <div class="hero-copy">
-          <p class="eyebrow">Construction safety + human-drone interaction</p>
-          <h1>Drone-Induced Distraction and Construction Safety Research</h1>
-          <p class="lead">A research program examining how UAV presence affects construction workers' attention, postural stability, and task performance, then translating the evidence into safer drone operation and planning guidance.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#overview">Research Overview</a>
-            <a class="button" href="#drone-project">UAV Planning Project</a>
-            <a class="button" href="#roofing-project">Roofing Balance Study</a>
+        <div class="hero-intro">
+          <div>
+            <p class="eyebrow">Construction safety + human-drone interaction</p>
+            <h1>Drone-Induced Distraction and Construction Safety Research</h1>
           </div>
+          <p class="lead">A two-project research program examining how UAV presence affects construction workers' attention, task performance, and postural stability, then translating the evidence into safer operating guidance and distraction-aware route planning.</p>
         </div>
-        <div class="hero-media" aria-label="Distraction-aware path planning preview">
-          <video autoplay muted loop playsinline poster="assets/video-posters/path-planning-demo.jpg">
-            <source src="assets/videos/media8.mp4" type="video/mp4">
-          </video>
+        <div class="hero-projects" aria-label="Research projects">
+          <a class="hero-project hero-project-one" href="#drone-project">
+            <img src="assets/video-posters/path-planning-demo.jpg" alt="Construction site simulation used for distraction-aware UAV path planning.">
+            <span class="hero-project-copy">
+              <span class="project-kicker">Project 1</span>
+              <strong>Behavioral evidence and distraction-aware UAV path planning</strong>
+              <span>Workers at height, tower crane operators, and computational route planning</span>
+            </span>
+          </a>
+          <a class="hero-project hero-project-two" href="#roofing-project">
+            <img src="assets/figures/kneeling/roofing-drone-roof-view.jpg" alt="Virtual roofing scene with a drone above the sloped roof.">
+            <span class="hero-project-copy">
+              <span class="project-kicker">Project 2</span>
+              <strong>Roofing balance and postural stability</strong>
+              <span>Kneeling shingle installation across roof slopes and drone altitudes</span>
+            </span>
+          </a>
         </div>
       </section>
 
@@ -71,25 +81,6 @@
             <p>A WVU collaboration evaluates how drone altitude affects roofers' postural stability during kneeling shingle-installation tasks on different roof slopes.</p>
             <a href="#roofing-project">View Project 2</a>
           </article>
-        </div>
-
-        <div class="lab-collaboration" aria-label="Collaborating academic laboratories">
-          <a class="lab-card uw-lab-card" href="https://darc.cee.wisc.edu/index.html" target="_blank" rel="noopener">
-            <img src="assets/logos/uw-madison-logo.svg" alt="University of Wisconsin-Madison logo">
-            <div>
-              <p class="tag">University of Wisconsin-Madison</p>
-              <h3>Digital and Robotic Construction (DARC) Lab</h3>
-              <p>UW-Madison researchers lead the drone-induced distraction, worker attention, and distraction-aware path planning studies within the construction safety research program.</p>
-            </div>
-          </a>
-          <a class="lab-card wvu-lab-card" href="https://feidai.faculty.wvu.edu/home" target="_blank" rel="noopener">
-            <img src="assets/logos/wvu-logo.svg" alt="West Virginia University logo">
-            <div>
-              <p class="tag">West Virginia University</p>
-              <h3>Integrated Construction Informatics Laboratory</h3>
-              <p>WVU researchers contribute the roofing balance and postural-stability study, extending the research program from visual distraction to physically measurable stability outcomes.</p>
-            </div>
-          </a>
         </div>
 
         <div class="two-column question-grid">
@@ -134,13 +125,13 @@
           </article>
           <article>
             <p class="tag">Research workflow</p>
-            <h3>From behavioral evidence to planning</h3>
+            <h3>How evidence becomes safety guidance</h3>
             <div class="workflow">
-              <span>Controlled VR and simulator studies</span>
-              <span>Attention, performance, and balance metrics</span>
-              <span>Safety guidance and cost-aware UAV paths</span>
+              <span>Controlled human-subject experiments</span>
+              <span>Attention, performance, and balance evidence</span>
+              <span>Project-specific operating and planning controls</span>
             </div>
-            <p>The program connects human-subject experiments with operational guidance so that drone use can be evaluated not only by physical feasibility, but also by its likelihood of distracting nearby workers or disturbing stability during high-risk tasks.</p>
+            <p>Project 1 converts attention and performance results into spatial soft costs for route planning. Project 2 uses postural-stability evidence to inform drone-separation and task-timing guidance for roofing operations.</p>
           </article>
         </div>
       </section>
@@ -161,8 +152,8 @@
             <span>Increase in tower-crane boundary collisions when the drone flew below the operator compared with no-drone.</span>
           </article>
           <article class="metric">
-            <strong>30%</strong>
-            <span>Longer path completion time can trade for substantially lower drone dwell time in distraction zones.</span>
+            <strong>54%</strong>
+            <span>Maximum reduction in distraction-area dwell time in the multi-worker, multi-crane scenario, with a 30% increase in completion time.</span>
           </article>
           <article class="metric">
             <strong>16 ft</strong>
@@ -177,6 +168,12 @@
           <h2>Controlled experiments on attention and performance, followed by distraction-aware drone path planning</h2>
           <p>This project follows a three-part logic: first, quantify drone-induced attention shifts for workers at height; second, test drone effects on tower crane operator attention and performance; third, translate the empirical distraction parameters into a soft-cost path planning method.</p>
         </div>
+
+        <ol class="study-index" aria-label="Project 1 study sequence">
+          <li><a href="#study-1"><span>Study 1</span><strong>Workers at height</strong><small>Hazard-area visual attention</small></a></li>
+          <li><a href="#study-2"><span>Study 2</span><strong>Tower crane operators</strong><small>Attention and task performance</small></a></li>
+          <li><a href="#study-3"><span>Study 3</span><strong>Path planning</strong><small>Empirical evidence to soft costs</small></a></li>
+        </ol>
 
         <div id="study-1" class="study-section study-one">
           <div class="research-block">
@@ -216,9 +213,9 @@
                 <source src="assets/videos/media5.mp4" type="video/mp4">
               </video>
               <div class="demo-copy">
-                <h3>Study 1 video: Work-at-height experiment</h3>
+                <h3>Video demonstration: Work-at-height experiment</h3>
                 <p>Video documentation of the virtual elevated task environment and participant movement setup used to study hazard-area attention under drone flight conditions.</p>
-                <p class="demo-note"><strong>Demo focus:</strong> Participants move through a work-at-height environment where openings, edges, sky regions, and drone flight paths define areas of interest for eye-tracking analysis.</p>
+                <p class="demo-note"><strong>Research connection:</strong> Participants move through a work-at-height environment where openings, edges, sky regions, and drone flight paths define areas of interest for eye-tracking analysis.</p>
               </div>
             </article>
           </div>
@@ -303,9 +300,9 @@
                 <source src="assets/videos/media7.mp4" type="video/mp4">
               </video>
               <div class="demo-copy">
-                <h3>Study 2 video: Tower crane operator experiment</h3>
+                <h3>Video demonstration: Tower crane operator experiment</h3>
                 <p>Video documentation of the crane simulator task used to evaluate drone effects on operator visual attention, payload control, and boundary collisions.</p>
-                <p class="demo-note"><strong>Demo focus:</strong> The simulation recreates a precision-control crane task while drones approach from above or below the operator cabin, linking flight condition with operator attention and task performance.</p>
+                <p class="demo-note"><strong>Research connection:</strong> The simulation recreates a precision-control crane task while drones approach from above or below the operator cabin, linking flight condition with operator attention and task performance.</p>
               </div>
             </article>
           </div>
@@ -350,9 +347,9 @@
 
       </section>
 
-      <section id="study-3" class="section">
+      <section id="study-3" class="section project-one-continuation">
         <div class="section-heading">
-          <p class="eyebrow">Study 3 / Computational method</p>
+          <p class="eyebrow">Project 1 / Study 3 / Computational method</p>
           <h2>Distraction-aware drone path planning</h2>
           <p>The planning method converts empirical distraction parameters into soft costs in a 3D grid. The drone can still reach inspection or monitoring viewpoints, but routes that dwell in distraction areas become more expensive, allowing the planner to trade small efficiency losses for meaningful reduction in distraction exposure.</p>
         </div>
@@ -363,9 +360,9 @@
                 <source src="assets/videos/media8.mp4" type="video/mp4">
               </video>
               <div class="demo-copy">
-                <h3>Study 3 video: Distraction-aware path planning</h3>
+                <h3>Video demonstration: Distraction-aware path planning</h3>
                 <p>Video documentation of cost-aware UAV routing around workers, tower cranes, obstacles, travel points, and empirically derived distraction boundaries.</p>
-                <p class="demo-note"><strong>Demo focus:</strong> Behavioral findings from Study 1 and Study 2 become route costs, reducing drone dwell time near safety-critical work while preserving feasible inspection paths.</p>
+                <p class="demo-note"><strong>Research connection:</strong> Behavioral findings from Study 1 and Study 2 become route costs, reducing drone dwell time near safety-critical work while preserving feasible inspection paths.</p>
               </div>
             </article>
           </div>
@@ -550,7 +547,7 @@
                 </article>
                 <article>
                   <strong>Design</strong>
-                  <span>3 roof pitches x 4 drone conditions, with 30-second trials</span>
+                  <span>3 roof pitches &times; 4 drone conditions, with 30-second trials</span>
                 </article>
                 <article>
                   <strong>Measures</strong>
@@ -570,9 +567,9 @@
                 <source src="assets/videos/kneeling-study-demo.mp4" type="video/mp4">
               </video>
               <div class="demo-copy">
-                <h3>Project 2 video: Kneeling roofing balance experiment</h3>
+                <h3>Video demonstration: Kneeling roofing balance experiment</h3>
                 <p>The demo shows the virtual roof environment used for the drone-intrusion conditions while the physical setup records balance response during kneeling shingle installation.</p>
-                <p class="demo-note"><strong>Demo focus:</strong> Drone altitude is varied while participants maintain a kneeling work posture, allowing changes in center-of-pressure movement to be linked to UAV proximity.</p>
+                <p class="demo-note"><strong>Research connection:</strong> Drone altitude is varied while participants maintain a kneeling work posture, allowing changes in center-of-pressure movement to be linked to UAV proximity.</p>
               </div>
             </article>
           </div>
@@ -654,7 +651,7 @@
                   <td>0.018</td>
                 </tr>
                 <tr>
-                  <td>Height x slope</td>
+                  <td>Height &times; slope</td>
                   <td>0.068</td>
                   <td>0.019</td>
                   <td>0.457</td>
@@ -665,18 +662,39 @@
             </table>
           </div>
 
-          <div class="planning-visuals roofing-results">
-            <figure class="figure-frame data-viz">
-              <img src="assets/figures/kneeling/kneeling-max-displacement.png" alt="Maximum mediolateral and anteroposterior COP displacement by roof pitch and drone altitude.">
-              <figcaption><strong>Maximum COP displacement.</strong><span>Near-drone conditions increased both ML and AP maximum displacement relative to the no-drone condition, with the strongest disruption at 16 ft across roof pitches.</span></figcaption>
+          <div class="roofing-results" aria-label="Center-of-pressure results">
+            <figure class="figure-frame data-viz result-chart">
+              <a class="figure-image-link" href="assets/figures/kneeling/kneeling-max-displacement.png" target="_blank" rel="noopener" aria-label="Open the maximum COP displacement figure at full resolution">
+                <img src="assets/figures/kneeling/kneeling-max-displacement.png" alt="Maximum mediolateral and anteroposterior COP displacement by roof pitch and drone altitude.">
+              </a>
+              <figcaption>
+                <strong>Maximum COP displacement</strong>
+                <span>The 16 ft condition produced the largest mean ML and AP excursions relative to the no-drone condition across the three roof pitches. The differences generally narrowed as drone altitude increased, indicating a proximity-dependent disturbance in peak center-of-pressure movement.</span>
+                <span class="figure-method">Bars show the mean and standard error. An asterisk identifies a significant comparison with the no-drone condition.</span>
+                <a class="figure-link" href="assets/figures/kneeling/kneeling-max-displacement.png" target="_blank" rel="noopener">View full-resolution figure</a>
+              </figcaption>
             </figure>
-            <figure class="figure-frame data-viz">
-              <img src="assets/figures/kneeling/kneeling-rms-displacement.png" alt="RMS mediolateral and anteroposterior COP displacement by roof pitch and drone altitude.">
-              <figcaption><strong>RMS displacement.</strong><span>RMS metrics show that drone effects were not limited to isolated peaks; close drone presence increased sustained postural sway during the kneeling task.</span></figcaption>
+            <figure class="figure-frame data-viz result-chart">
+              <a class="figure-image-link" href="assets/figures/kneeling/kneeling-rms-displacement.png" target="_blank" rel="noopener" aria-label="Open the RMS displacement figure at full resolution">
+                <img src="assets/figures/kneeling/kneeling-rms-displacement.png" alt="RMS mediolateral and anteroposterior COP displacement by roof pitch and drone altitude.">
+              </a>
+              <figcaption>
+                <strong>RMS displacement</strong>
+                <span>Drone-present conditions produced higher RMS ML and AP values than the no-drone condition, showing that the effect was sustained across each trial rather than being limited to isolated peak movements.</span>
+                <span class="figure-method">The flat-roof condition shows the clearest separation. The 16 ft condition is consistently elevated, while RMS ML also remains elevated at 82 ft on the flat roof.</span>
+                <a class="figure-link" href="assets/figures/kneeling/kneeling-rms-displacement.png" target="_blank" rel="noopener">View full-resolution figure</a>
+              </figcaption>
             </figure>
-            <figure class="figure-frame data-viz result-wide">
-              <img src="assets/figures/kneeling/kneeling-sway-area.png" alt="Sway area by roof pitch and drone altitude.">
-              <figcaption><strong>Sway area.</strong><span>The largest sway-area increases occurred under the closest drone condition, especially on the flat roof condition, reinforcing the need to manage drone proximity during roofing operations.</span></figcaption>
+            <figure class="figure-frame data-viz result-chart result-chart-compact">
+              <a class="figure-image-link" href="assets/figures/kneeling/kneeling-sway-area.png" target="_blank" rel="noopener" aria-label="Open the sway area figure at full resolution">
+                <img src="assets/figures/kneeling/kneeling-sway-area.png" alt="Sway area by roof pitch and drone altitude.">
+              </a>
+              <figcaption>
+                <strong>Sway area</strong>
+                <span>The closest drone condition produced the largest sway-area increase, with the strongest contrast on the flat roof. The result reinforces the need to manage UAV proximity when roofers have limited mobility in a kneeling posture.</span>
+                <span class="figure-method">Error bars show standard error; marked comparisons are significant relative to the no-drone condition.</span>
+                <a class="figure-link" href="assets/figures/kneeling/kneeling-sway-area.png" target="_blank" rel="noopener">View full-resolution figure</a>
+              </figcaption>
             </figure>
           </div>
 
@@ -696,81 +714,135 @@
       <section class="section contributions">
         <div class="section-heading">
           <p class="eyebrow">Research contributions</p>
-          <h2>Connecting behavioral evidence, postural stability, and safer UAV operation</h2>
-          <p>Across both projects, the research contributes at four levels: understanding how drone presence affects worker attention, quantifying balance effects during roofing tasks, parameterizing distraction risk in spatial terms, and demonstrating how those parameters can change UAV route choices.</p>
+          <h2>Four contributions, from human-subject evidence to operational control</h2>
+          <p>The two projects address complementary human-factors outcomes. Project 1 measures attention and task performance and then uses those findings in route planning; Project 2 adds biomechanical evidence for roofing operations and supports proximity-based safety guidance.</p>
         </div>
-        <div class="contribution-grid program-contributions">
-          <article>
-            <img src="assets/figures/fixation-danger-front.png" alt="Fixation time on danger areas for front drone conditions.">
-            <h3>Understanding impacts</h3>
-            <p>Shows how drone presence can shift visual attention away from hazards and alter task performance in high-risk construction settings, including work-at-height tasks and tower crane operation.</p>
-          </article>
-          <article>
-            <img src="assets/figures/kneeling/kneeling-task-force-plate.png" alt="Kneeling roofing balance experiment setup.">
-            <h3>Balance evidence</h3>
-            <p>Extends drone-distraction analysis to postural stability by measuring COP-based balance metrics during kneeling shingle installation on inclined surfaces.</p>
-          </article>
-          <article>
-            <img src="assets/figures/distraction-parameters.png" alt="Drone distraction parameters around workers and tower cranes.">
-            <h3>Quantitative parameters</h3>
-            <p>Extracts spatial distraction parameters from controlled behavioral experiments, including worker vertical clearance and tower crane cabin-relative flight conditions.</p>
-          </article>
-          <article>
-            <img src="assets/figures/path-planning-findings.png" alt="Path planning finding summary for distraction-aware drone routing.">
-            <h3>Mitigation by planning</h3>
-            <p>Integrates distraction costs into path planning to reduce drone dwell time in risky distraction areas while preserving route feasibility for inspection and monitoring tasks.</p>
-          </article>
+        <ol class="contribution-sequence">
+          <li>
+            <span class="contribution-index">01</span>
+            <p class="contribution-phase">Project 1 / Empirical evidence</p>
+            <h3>Visual attention and task performance</h3>
+            <p>Quantifies how drone height and relative position redirect attention away from hazard areas and affect precision-task performance for workers at height and tower crane operators.</p>
+          </li>
+          <li>
+            <span class="contribution-index">02</span>
+            <p class="contribution-phase">Project 2 / Biomechanical evidence</p>
+            <h3>Postural stability during roofing work</h3>
+            <p>Extends distraction research to center-of-pressure outcomes, showing how UAV proximity affects peak displacement, sustained sway, and sway area during kneeling work.</p>
+          </li>
+          <li>
+            <span class="contribution-index">03</span>
+            <p class="contribution-phase">Project 1 / Risk representation</p>
+            <h3>Spatial distraction parameters</h3>
+            <p>Represents empirically derived worker and tower-crane distraction areas in a 3D cost grid, making human-factors evidence usable by a computational planner.</p>
+          </li>
+          <li>
+            <span class="contribution-index">04</span>
+            <p class="contribution-phase">Project 1 / Operational mitigation</p>
+            <h3>Distraction-aware route planning</h3>
+            <p>Uses soft costs to reduce drone dwell time near distraction-sensitive work while preserving feasible routes to required construction monitoring and inspection viewpoints.</p>
+          </li>
+        </ol>
+        <div class="contribution-scope">
+          <div>
+            <p class="tag">Interpretation boundary</p>
+            <h3>The projects share a safety objective but produce different operational outputs.</h3>
+            <p>The current path planner is parameterized by the worker-at-height and tower-crane studies. The roofing study is not yet an input to that model; it supports minimum-distance and task-timing guidance and provides evidence for a future balance-aware planning extension.</p>
+          </div>
+          <dl>
+            <div>
+              <dt>Current planning inputs</dt>
+              <dd>Worker attention and tower-crane performance</dd>
+            </div>
+            <div>
+              <dt>Roofing safety output</dt>
+              <dd>Proximity and task-specific operating guidance</dd>
+            </div>
+            <div>
+              <dt>Shared program outcome</dt>
+              <dd>Human-centered UAV deployment in construction</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
       <section id="team" class="section section-band">
         <div class="section-heading">
           <p class="eyebrow">Research team</p>
-          <h2>Project investigators and researchers</h2>
+          <h2>Researchers and project investigators</h2>
+          <p>The program is a collaboration between the Digital and Robotic Construction Lab at UW-Madison and the Integrated Construction Informatics Laboratory at West Virginia University.</p>
         </div>
-        <div class="people-grid">
-          <article class="person-card">
-            <img src="assets/people/wei-han.jpg" alt="Wei Han portrait">
-            <h3>Wei Han</h3>
-            <p>Ph.D. alumnus, University of Wisconsin-Madison</p>
-            <span>Graduate researcher</span>
-          </article>
-          <article class="person-card">
-            <img src="assets/people/mahfuza-maisha-mouri.jpg" alt="Mahfuza Maisha Mouri portrait">
-            <h3>Mahfuza (Masha) Mouri</h3>
-            <p>Graduate Research Assistant, West Virginia University</p>
-            <span>Graduate researcher</span>
-          </article>
-          <article class="person-card">
-            <img src="assets/people/liqun-xu.jpg" alt="Liqun Xu portrait">
-            <h3>Liqun Xu</h3>
-            <p>Ph.D. Student, University of Wisconsin-Madison</p>
-            <span>Graduate researcher</span>
-          </article>
-          <article class="person-card">
-            <img src="assets/people/alireza-ghasemi.jpg" alt="Alireza Ghasemi portrait">
-            <h3>Alireza Ghasemi</h3>
-            <p>Graduate Research Assistant, West Virginia University</p>
-            <span>Graduate researcher</span>
-          </article>
-          <article class="person-card">
-            <img src="assets/people/wei-yin-loh.jpg" alt="Wei-Yin Loh portrait">
-            <h3>Wei-Yin Loh</h3>
-            <p>Professor, Department of Statistics, University of Wisconsin-Madison</p>
-            <span>Co-PI</span>
-          </article>
-          <article class="person-card">
-            <img src="assets/people/fei-dai.jpg" alt="Fei Dai portrait">
-            <h3>Fei Dai</h3>
-            <p>Professor, West Virginia University</p>
-            <span>Co-PI</span>
-          </article>
-          <article class="person-card">
-            <img src="assets/people/zhenhua-zhu.png" alt="Zhenhua Zhu portrait">
-            <h3>Zhenhua Zhu</h3>
-            <p>Associate Professor, University of Wisconsin-Madison</p>
-            <span>PI</span>
-          </article>
+        <div class="lab-collaboration" aria-label="Collaborating academic laboratories">
+          <a class="lab-card uw-lab-card" href="https://darc.cee.wisc.edu/index.html" target="_blank" rel="noopener">
+            <img src="assets/logos/uw-madison-logo.svg" alt="University of Wisconsin-Madison logo">
+            <div>
+              <p class="tag">University of Wisconsin-Madison</p>
+              <h3>Digital and Robotic Construction (DARC) Lab</h3>
+              <p>Worker attention, tower-crane performance, and distraction-aware path planning</p>
+            </div>
+          </a>
+          <a class="lab-card wvu-lab-card" href="https://feidai.faculty.wvu.edu/home" target="_blank" rel="noopener">
+            <img src="assets/logos/wvu-logo.svg" alt="West Virginia University logo">
+            <div>
+              <p class="tag">West Virginia University</p>
+              <h3>Integrated Construction Informatics Laboratory</h3>
+              <p>Roofing balance and postural-stability research</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="team-group">
+          <p class="team-group-label">Graduate researchers</p>
+          <div class="people-grid student-grid">
+            <article class="person-card">
+              <img src="assets/people/wei-han.jpg" alt="Wei Han portrait">
+              <h3>Wei Han</h3>
+              <p>Ph.D. alumnus, University of Wisconsin-Madison</p>
+              <span>Graduate researcher (alumnus)</span>
+            </article>
+            <article class="person-card">
+              <img src="assets/people/mahfuza-maisha-mouri.jpg" alt="Mahfuza Maisha Mouri portrait">
+              <h3>Mahfuza Maisha Mouri</h3>
+              <p>Graduate Research Assistant, West Virginia University</p>
+              <span>Graduate researcher</span>
+            </article>
+            <article class="person-card">
+              <img src="assets/people/liqun-xu.jpg" alt="Liqun Xu portrait">
+              <h3>Liqun Xu</h3>
+              <p>Ph.D. Student, University of Wisconsin-Madison</p>
+              <span>Graduate researcher</span>
+            </article>
+            <article class="person-card">
+              <img src="assets/people/alireza-ghasemi.jpg" alt="Alireza Ghasemi portrait">
+              <h3>Alireza Ghasemi</h3>
+              <p>Graduate Research Assistant, West Virginia University</p>
+              <span>Graduate researcher</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="team-group">
+          <p class="team-group-label">Project investigators</p>
+          <div class="people-grid investigator-grid">
+            <article class="person-card">
+              <img src="assets/people/wei-yin-loh.jpg" alt="Wei-Yin Loh portrait">
+              <h3>Wei-Yin Loh</h3>
+              <p>Professor, Department of Statistics, University of Wisconsin-Madison</p>
+              <span>Co-PI</span>
+            </article>
+            <article class="person-card">
+              <img src="assets/people/fei-dai.jpg" alt="Fei Dai portrait">
+              <h3>Fei Dai</h3>
+              <p>Professor, West Virginia University</p>
+              <span>Co-PI</span>
+            </article>
+            <article class="person-card">
+              <img src="assets/people/zhenhua-zhu.png" alt="Zhenhua Zhu portrait">
+              <h3>Zhenhua Zhu</h3>
+              <p>Associate Professor, University of Wisconsin-Madison</p>
+              <span>PI</span>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -839,7 +911,7 @@
     <footer class="site-footer">
       <p><a href="https://darc.cee.wisc.edu/index.html" target="_blank" rel="noopener">Digital and Robotic Construction (DARC) Lab</a>, University of Wisconsin-Madison</p>
       <p><a href="https://feidai.faculty.wvu.edu/home" target="_blank" rel="noopener">Integrated Construction Informatics Laboratory</a>, West Virginia University</p>
-      <p>Funded by NIOSH and built for GitHub Pages as an academic project website.</p>
+      <p>Funded by the National Institute for Occupational Safety and Health (NIOSH).</p>
     </footer>
 
     <script src="app.js"></script>
