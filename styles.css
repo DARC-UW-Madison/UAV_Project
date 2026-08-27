@@ -12,6 +12,8 @@
   --lab-taupe: #82786e;
   --lab-steel: #879a9f;
   --lab-gold: #b1a374;
+  --wvu-blue: #002855;
+  --wvu-gold: #eaaa00;
   --blue: var(--lab-primary);
   --blue-deep: var(--lab-primary-deep);
   --green: var(--lab-primary);
@@ -158,6 +160,8 @@ main section {
   scroll-margin-top: 78px;
 }
 
+#drone-project,
+#roofing-project,
 #study-1,
 #study-2,
 #study-3 {
@@ -299,6 +303,38 @@ h3 {
   margin-top: 16px;
 }
 
+.project-map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.project-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--lab-primary);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.project-card.roofing-card {
+  border-left-color: var(--wvu-gold);
+}
+
+.project-card p:not(.tag) {
+  color: var(--muted);
+}
+
+.project-card a {
+  display: inline-flex;
+  margin-top: 4px;
+  color: var(--blue-deep);
+  font-weight: 760;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .framework-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -307,6 +343,10 @@ h3 {
 .result-row.three,
 .planning-visuals.three {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.roofing-setup-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .method-results {
@@ -436,6 +476,10 @@ h3 {
   gap: 14px;
 }
 
+.split-section .metric-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .metric {
   padding: 18px;
 }
@@ -493,11 +537,16 @@ h3 {
   --study-color: var(--lab-gold);
 }
 
+.study-roofing {
+  --study-color: var(--wvu-gold);
+}
+
 .study-section .tag {
   color: var(--study-color);
 }
 
-.study-three .pipeline span {
+.study-three .pipeline span,
+.study-roofing .pipeline span {
   background: var(--lab-gold);
 }
 
@@ -666,6 +715,26 @@ figcaption span {
   height: 210px;
 }
 
+.roofing-results .data-viz img {
+  width: 100%;
+  height: 430px;
+  padding: 10px;
+  object-fit: contain;
+  background: var(--white);
+}
+
+.roofing-results {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.roofing-results .result-wide {
+  grid-column: auto;
+}
+
+.roofing-results .result-wide img {
+  height: 430px;
+}
+
 .method-detail > div,
 .parameter-bridge > div {
   align-self: stretch;
@@ -794,6 +863,15 @@ figcaption span {
   font-weight: 800;
 }
 
+.roofing-stat-panel .sensitivity-table td:last-child {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.roofing-stat-panel .sensitivity-table td:nth-child(n + 2) {
+  font-variant-numeric: tabular-nums;
+}
+
 .media-grid,
 .people-grid,
 .contribution-grid,
@@ -881,6 +959,10 @@ figcaption span {
   border-radius: 6px;
   object-fit: contain;
   background: var(--white);
+}
+
+.program-contributions {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .people-grid {
@@ -1039,6 +1121,7 @@ figcaption span {
   .tradeoff,
   .acknowledgements,
   .framework-grid,
+  .project-map,
   .method-detail,
   .parameter-bridge,
   .sensitivity-panel,
@@ -1058,6 +1141,7 @@ figcaption span {
   .metric-grid,
   .media-grid,
   .figure-grid.three,
+  .roofing-setup-grid,
   .result-row.three,
   .planning-visuals.three,
   .logo-grid,
@@ -1179,6 +1263,14 @@ figcaption span {
     height: 150px;
   }
 
+  .roofing-results .data-viz img {
+    height: 300px;
+  }
+
+  .roofing-results .result-wide img {
+    height: 240px;
+  }
+
   .person-card p {
     min-height: 0;
   }
@@ -1267,5 +1359,29 @@ figcaption span {
 
   .sensitivity-table td:nth-child(5)::before {
     content: "Distraction";
+  }
+
+  .roofing-stat-panel .sensitivity-table td:nth-child(1)::before {
+    content: "Effect";
+  }
+
+  .roofing-stat-panel .sensitivity-table td:nth-child(2)::before {
+    content: "Max ML";
+  }
+
+  .roofing-stat-panel .sensitivity-table td:nth-child(3)::before {
+    content: "Max AP";
+  }
+
+  .roofing-stat-panel .sensitivity-table td:nth-child(4)::before {
+    content: "RMS ML";
+  }
+
+  .roofing-stat-panel .sensitivity-table td:nth-child(5)::before {
+    content: "RMS AP";
+  }
+
+  .roofing-stat-panel .sensitivity-table td:nth-child(6)::before {
+    content: "Sway area";
   }
 }
